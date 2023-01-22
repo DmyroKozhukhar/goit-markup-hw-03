@@ -274,8 +274,6 @@ body {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 0;
-  padding-left: 65px;
-  padding-right: 65px;
 }
 
 .our-team-p {
@@ -283,9 +281,8 @@ body {
   line-height: 1.5;
   color: var(--p-contact-color);
   margin-top: 8px;
-  padding-right: 68px;
+
   margin-bottom: 0;
-  padding-left: 68px;
 }
 
 /* PORTFOLIO-STYLE */
