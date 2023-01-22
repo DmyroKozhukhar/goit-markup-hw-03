@@ -17,6 +17,7 @@
   --logo-studio-footer-text: #f4f4fd;
   --footer-text: #e7e9fc;
   --navi-link-hover-color: #434455;
+  --header-underline-color: #e7e9fc;
 }
 /* GENERAL */
 .visually-hidden {
@@ -69,6 +70,8 @@ body {
 .page-header {
   display: flex;
   align-items: center;
+  border: 1px solid transparent;
+  border-bottom-color: var(--header-underline-color);
 }
 .navi-link,
 .contmail,
@@ -271,11 +274,6 @@ body {
   line-height: 1.2;
   text-align: center;
 }
-.h2-portfolio {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
 
 .our-team-p {
   text-align: center;
@@ -328,17 +326,38 @@ body {
   margin-bottom: 0;
 }
 
+.h2-portfolio {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-top: 32px;
+  padding-left: 16px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
 .our-works-list > .list-item {
   flex-basis: calc(100% / 3 - 24px);
   margin-left: 24px;
+  margin-bottom: 48px;
 }
 .our-works-list > .list-item:nth-child(3n + 1) {
   margin-left: 0px;
+}
+.our-works-list > .list-item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .p-worklist {
   color: var(--p-contact-color);
   line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+.our-works-list .list-item {
+  border-bottom: 1px solid var(--header-underline-color);
 }
 
 /* FOOTER */
