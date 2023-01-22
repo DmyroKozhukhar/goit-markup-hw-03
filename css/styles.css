@@ -336,11 +336,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
-  margin-top: 32px;
-  padding-left: 16px;
-  margin-bottom: 0;
-  margin-right: auto;
+  margin: 0;
 }
 
 .our-works-list > .list-item {
@@ -354,16 +350,23 @@ body {
 .our-works-list > .list-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
+.our-works-list > .list-item {
+  max-width: 360px;
+}
 
 .p-worklist {
   color: var(--p-contact-color);
   line-height: 1.5;
+  margin: 0;
   margin-top: 8px;
-  margin-bottom: 0;
-  padding-left: 16px;
 }
-.our-works-list .list-item {
-  border-bottom: 1px solid var(--header-underline-color);
+
+.portfolio-card-content {
+  border: 1px solid var(--header-underline-color);
+  border-top: none;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 /* FOOTER */
