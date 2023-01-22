@@ -182,6 +182,7 @@ body {
   padding-left: 32px;
   padding-bottom: 16px;
   border-color: transparent;
+  border-radius: 4px;
 }
 .div-order {
   display: block;
@@ -315,6 +316,7 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   border-color: transparent;
+  border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
