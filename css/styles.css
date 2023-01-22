@@ -70,8 +70,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
-  border: 1px solid transparent;
-  border-bottom-color: var(--header-underline-color);
+  border-bottom: 1px solid var(--header-underline-color);
 }
 .navi-link,
 .contmail,
