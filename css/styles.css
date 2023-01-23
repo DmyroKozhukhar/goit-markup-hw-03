@@ -59,8 +59,8 @@ img {
   padding-bottom: 120px;
 }
 
-a:visited {
-  color: inherit;
+a.navi-link:visited {
+  color: #2e2f42;
 }
 
 .list-item {
