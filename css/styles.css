@@ -33,10 +33,25 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  min-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -77,12 +92,11 @@ body {
 .contnumb,
 .logo-link {
   text-decoration: none;
-}
-.logo-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .logo-web {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -103,17 +117,16 @@ body {
   font-weight: 500;
   color: inherit;
   line-height: 1.5;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-left: 76px;
 }
 .nav-menu-list {
   display: flex;
   align-items: center;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 .nav-menu-list .list-item + .list-item {
-  margin-left: 24px;
+  margin-left: 40px;
 }
 .navi-link:hover {
   color: var(--navi-link-hover-color);
@@ -127,14 +140,13 @@ body {
 
 /* ADDRESS */
 .address-menu {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-left: 332px;
+  margin-left: auto;
 }
 .address-menu-list {
   display: flex;
   align-items: center;
   text-align: justify;
+  margin: 0;
 }
 .address-menu-list .list-item:first-child {
   margin-right: 40px;
@@ -157,6 +169,7 @@ body {
 
 .hero-section {
   background-color: var(--hero-background-color);
+  text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -165,10 +178,8 @@ body {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  padding-right: 317px;
-  padding-left: 317px;
   display: block;
-  margin: 0;
+  margin-bottom: 48px;
 }
 .button-order {
   color: var(--button-order-text-color);
@@ -184,12 +195,7 @@ body {
   border-color: transparent;
   border-radius: 4px;
 }
-.div-order {
-  display: block;
-  margin-top: 48px;
-  padding-left: 479px;
-  padding-right: 479px;
-}
+
 .button-order:hover,
 .button-order:focus {
   background-color: var(--hover-focus-button-color);
@@ -209,7 +215,7 @@ body {
   margin-left: 24px;
 }
 /* DOING-SECTION */
-.h2-studio {
+.title-studio {
   display: block;
   margin: 0;
   padding-left: 402px;
@@ -252,7 +258,7 @@ body {
   margin-left: 24px;
 }
 .p-aboutus {
-  text-align: 1.5;
+  line-height: 1.5;
   color: var(--p-contact-color);
 }
 .h3-values {
@@ -261,7 +267,7 @@ body {
   line-height: 1.2;
 }
 
-.h2-studio {
+.title-studio {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -273,17 +279,16 @@ body {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  margin-top: 32px;
-  margin-bottom: 0;
 }
-
+.text-under-team-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .our-team-p {
   text-align: center;
   line-height: 1.5;
   color: var(--p-contact-color);
-  margin-top: 8px;
-
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 /* PORTFOLIO-STYLE */
@@ -294,8 +299,7 @@ body {
   display: block;
   display: flex;
   padding-top: 0;
-  padding-left: 270px;
-  padding-right: 270px;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 72px;
   text-align: center;
@@ -370,7 +374,7 @@ body {
 }
 
 /* FOOTER */
-.footer-menu.container {
+.footer-menu .container {
   background-color: var(--footer-background-color);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -385,4 +389,5 @@ body {
 .footer-text {
   color: var(--footer-text);
   line-height: 1.5;
+  margin-top: 8px;
 }
