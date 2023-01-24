@@ -39,12 +39,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
 }
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 .container {
   width: 1158px;
@@ -82,7 +84,7 @@ body {
 }
 
 /* HEADER */
-.page-header {
+.page-header> .container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--header-underline-color);
@@ -124,6 +126,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+  color: var(--main-text-color);
 }
 .nav-menu-list .list-item + .list-item {
   margin-left: 40px;
@@ -147,6 +150,7 @@ body {
   align-items: center;
   text-align: justify;
   margin: 0;
+  font-weight: 400;
 }
 .address-menu-list .list-item:first-child {
   margin-right: 40px;
@@ -218,8 +222,7 @@ body {
 .title-studio {
   display: block;
   margin: 0;
-  padding-left: 402px;
-  padding-right: 402px;
+  text-align: center;
 }
 .doing-section {
   padding-top: 0;
@@ -279,6 +282,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 8px;
 }
 .text-under-team-list {
   padding-top: 32px;
@@ -288,7 +292,7 @@ body {
   text-align: center;
   line-height: 1.5;
   color: var(--p-contact-color);
-  margin-bottom: 8px;
+ 
 }
 
 /* PORTFOLIO-STYLE */
@@ -298,9 +302,7 @@ body {
 .buttons-list {
   display: block;
   display: flex;
-  padding-top: 0;
   justify-content: center;
-  margin-top: 0;
   margin-bottom: 72px;
   text-align: center;
 }
@@ -374,7 +376,7 @@ body {
 }
 
 /* FOOTER */
-.footer-menu .container {
+.footer-menu {
   background-color: var(--footer-background-color);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -390,4 +392,8 @@ body {
   color: var(--footer-text);
   line-height: 1.5;
   margin-top: 8px;
+}
+.footer-menu > .container > .logo-link {
+  padding: 0;
+  margin-bottom: 16px;
 }
